@@ -11,7 +11,7 @@
   , "url" : "git://github.com/robrighter/easy-oauth.git"
   }
 , "bugs" :
-  { "web" : "http://github.com/isaacs/npm/issues" }
+  { "web" : "http://github.com/robrighter/easy-oauth/issues" }
 , "directories" : { "lib" : "./lib" }
 , "main" : "./lib/easy-oauth.js"
 , "dependencies" : {
