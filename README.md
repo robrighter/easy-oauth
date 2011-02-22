@@ -6,12 +6,11 @@ EasyOAuth is a simple module that is intended to make it very easy to add OAuth 
 Installation and Usage
 =================
 (1) Install the dependancies: 
-	npm install express
-	npm install ejs
-	npm install oauth
-	npm install connect-auth
-	npm install easy-oauth
 	
+	npm install easy-oauth
+
+This will automatically install the dependencies (connect, oauth, connect-auth, express)
+
 (2) Setup your OAuth Keys
 * Copy down example_keys_file.js from https://github.com/robrighter/easy-oauth/blob/master/example_keys_file.js
 * Rename it to keys_file.js.
