@@ -61,3 +61,6 @@ Usage
 		$('#facebutt').click(function(){
 		   openEasyOAuthBox('facebook',authcallback);
 		});
+
+(4) Access Protected Resources
+Once a use has OAuth'd in, you will have access to the access keys via the expressjs request object using req.getAuthDetails(). For more information about how to use req.getAuthDetails() to access protected resources, checkout @ciaran_j's https://github.com/ciaranj/connect-auth
