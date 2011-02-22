@@ -25,7 +25,7 @@ Usage
 
 		var connect = require('connect');
 		var express = require('express');
-		var easyoauth = require('./lib/easy-oauth').EasyOAuth;
+		var easyoauth = require('easy-oauth').EasyOAuth;
 		var server = express.createServer();
 		server.configure(function(){
 		    server.use(connect.bodyDecoder());
