@@ -3,21 +3,25 @@ EasyOAuth
 
 EasyOAuth is a simple module that is intended to make it very easy to add OAuth to your node.js website.
 
-Installation and Usage
-=================
-(1) Install the dependancies: 
+Installation
+================= 
 	
 	npm install easy-oauth
 
 This will automatically install the dependencies (connect, oauth, connect-auth, express)
 
-(2) Setup your OAuth Keys
+
+Usage
+=================
+
+(1) Setup your OAuth Keys
+
 * Copy down example_keys_file.js from https://github.com/robrighter/easy-oauth/blob/master/example_keys_file.js
 * Rename it to keys_file.js.
 * Edit it to include the keys associated with your oauth application.
-	
 
-(3) Usage on the Server Side
+
+(2) Usage on the Server Side
 
 		var connect = require('connect');
 		var express = require('express');
@@ -32,7 +36,7 @@ This will automatically install the dependencies (connect, oauth, connect-auth, 
 		    server.use(server.router);
 		});
 
-(4) Usage on the Client Side
+(3) Usage on the Client Side
 
 **Include JQuery and the EasyOAuth Client Lib**
 
