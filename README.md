@@ -32,7 +32,7 @@ Usage
 		    server.use(express.cookieDecoder());
 		    server.use(express.session({secret : "shhhhhhhhhhhhhh!"}));
 		    server.use(connect.staticProvider(__dirname + '/static'));
-		    easyoauth(server,['twitter','facebook'], require('./keys_file'));
+		    server.use({ keys: require('./keys_file') });
 		    server.use(server.router);
 		});
 
