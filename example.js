@@ -6,17 +6,17 @@ var connect = require('connect')
 //other dependancies
 // ejs
 
-var easyoauth = require('./lib/easy-oauth').EasyOAuth;
+var easyoauth = require('./lib/easy-oauth');
 
 //Setup Express
 var server = express.createServer();
 server.configure(function(){
     server.set('views', __dirname + '/views');
-    server.use(connect.bodyDecoder());
-    server.use(express.cookieDecoder());
+    server.use(connect.bodyParser());
+    server.use(express.cookieParser());
     server.use(express.session({secret : "shhhhhhhhhhhhhh!"}));
-    server.use(connect.staticProvider(__dirname + '/static'));
-    easyoauth(server,['twitter','facebook'], require('./keys_file'));
+    server.use(connect.static(__dirname + '/static'));
+    server.use(easyoauth(require('./keys_file')));
     server.use(server.router);
 });
 

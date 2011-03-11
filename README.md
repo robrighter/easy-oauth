@@ -22,17 +22,19 @@ Usage
 
 
 (2) Usage on the Server Side
+(NOTE: This example assumes you are using express 2.0 however, the module will work with earlier versions of express)
 
 		var connect = require('connect');
 		var express = require('express');
-		var easyoauth = require('easy-oauth').EasyOAuth;
+		var easyoauth = require('easy-oauth');
 		var server = express.createServer();
 		server.configure(function(){
-		    server.use(connect.bodyDecoder());
-		    server.use(express.cookieDecoder());
+		    server.set('views', __dirname + '/views');
+		    server.use(connect.bodyParser());
+		    server.use(express.cookieParser());
 		    server.use(express.session({secret : "shhhhhhhhhhhhhh!"}));
-		    server.use(connect.staticProvider(__dirname + '/static'));
-		    server.use({ keys: require('./keys_file') });
+		    server.use(connect.static(__dirname + '/static'));
+		    server.use(easyoauth(require('./keys_file')));
 		    server.use(server.router);
 		});
 
