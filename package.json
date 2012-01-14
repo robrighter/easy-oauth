@@ -11,7 +11,7 @@
   , "url" : "git://github.com/robrighter/easy-oauth.git"
   }
 , "bugs" :
-  { "web" : "http://github.com/robrighter/easy-oauth/issues" }
+  { "url" : "http://github.com/robrighter/easy-oauth/issues" }
 , "directories" : { "lib" : "./lib" }
 , "main" : "./lib/easy-oauth.js"
 , "dependencies" : {
@@ -20,5 +20,5 @@
     "connect-auth": ">= 0.2.1",
     "express": ">= 1.0.7"
 }
-, "engines" : { "node" : "0.4" }
+, "engines" : { "node" : ">= 0.4.0" }
 }
