@@ -38,6 +38,21 @@ Usage
 		    server.use(server.router);
 		});
 
+**Easily check on any route if a user has been authenticated**
+
+		server.get('/my-account', function(req,res){
+		  req.authenticate(['oauth'], function(error, authenticated) { 
+		    if( authenticated ){
+		      //This user is logged in
+		      //render out a page for the logged in user
+		    }
+		    else{
+		      //This user is not logged in
+		      //render out a login page
+		    }
+		  });
+		});
+
 (3) Usage on the Client Side
 
 **Include JQuery and the EasyOAuth Client Lib**
