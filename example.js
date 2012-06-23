@@ -1,7 +1,7 @@
 //setup Dependencies
 var connect = require('connect')
     , express = require('express')
-    , sys = require('sys')
+    , util = require('util')
     , port = (process.env.PORT || 8081);
 //other dependancies
 // ejs
