@@ -1,7 +1,7 @@
 { "name" : "easy-oauth"
 , "description" : "Easy and simple oauth for your Express (node) website"
 , "keywords" : [ "oauth", "twitter", "facebook" ]
-, "version" : "0.2.1"
+, "version" : "0.2.2"
 , "homepage" : "https://github.com/robrighter/easy-oauth"
 , "author" : "Rob Righter <robrighter@gmail.com> (http://github.com/robrighter)"
 , "contributors" :
@@ -18,7 +18,8 @@
     "connect": ">= 0.5.10",
     "oauth": ">= 0.9.0",
     "connect-auth": ">= 0.2.1",
-    "express": ">= 1.0.7"
+    "express": ">= 1.0.7",
+    "ejs": ">= 0.7.2"
 }
 , "engines" : { "node" : ">= 0.4.0" }
 }
