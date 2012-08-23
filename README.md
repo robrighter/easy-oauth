@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/robrighter/easy-oauth.png)](http://travis-ci.org/robrighter/easy-oauth)
 EasyOAuth
 =================
 
